@@ -17,8 +17,11 @@ def about(request):
 def services(request):
         return render(request, 'main/services.html')
 
-def testimonials(request):
-        return render(request, 'main/testimonials.html')
+def lori_testimonials(request):
+        return render(request, 'main/lori_testimonials.html')
+
+def marci_testimonials(request):
+        return render(request, 'main/marci_testimonials.html')
 
 def engagements(request):
     return render(request, 'main/engagements.html')
