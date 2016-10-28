@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HCPSS MS GT Band</title>
+{% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Raleway Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,800" rel="stylesheet">
+</head>
+<body>
+  		<div class="container-fluid photo">
+	  		<nav class="navbar navbar-inverse">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a href="{% url 'index' %}">HOME</a></li>
+          			<li><a href="{% url 'about' %}">ABOUT US</a></li>
+          			<li><a href="{% url 'services' %}">SERVICES</a></li>
+          			<li><a href="{% url 'testimonials' %}">TESTIMONIALS</a></li>
+          			<li><a href="{% url 'engagements' %}">ENGAGEMENTS</a></li>
+          			<li><a href="{% url 'publications' %}">PUBLICATIONS</a></li>
+          			<li class="dropdown">
+              			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
+              			<ul class="dropdown-menu">
+			                <li><a href="#">COMMUNITY ENSEMBLES</a></li>
+			                <li><a href="#">COMPOSER CONNECTIONS</a></li>
+			                <li><a href="#">HCPSS MS GT BAND</a></li>
+			                <li><a href="#">INSTRUMENT REPAIRS</a></li>
+			                <li><a href="#">ONLINE RESOURCES</a></li>
+			                <li><a href="#">PRIVATE LESSONS</a></li>
+			                <li><a href="#">RECOMMENDED EQUIPMENT</a></li>
+			                <li><a href="#">STUDY RECORDINGS</a></li>
+			                <li><a href="#">SUMMER BAND CAMPS</a></li>
+              			</ul>
+          			</li>
+          			<li><a href="{% url 'contact' %}">CONTACT US</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			</nav>
+  			<div class="row headliner">
+			    <div class="col-md-12">
+			    	<h1 class='logo text-center'>MAKING KEY CHANGES</h1>
+			    	<h1 class='sublogo text-center'>HCPSS MS GT Band</h1>
+			    </div>
+	  		</div>
+	  		<div class="row">
+	  			<div class="col-md-6 col-md-offset-3 engagements">
+	  				<h3>Howard County Middle School  Gifted & Talented (GT) Band</h3>
+					<p class='last_event'>Mrs. Reichl &amp; Mr. Spang serve as co-directors of the Howard County Gifted &amp; Talented Middle School Band.</p>
+					<p class='last_event'><strong>Audition Information:</strong>&nbsp;&nbsp;provided to all HCPSS MS Band Directors on September 21. Students must obtain the&nbsp;registration&nbsp;information from their school band director. </p>
+					<p class='last_event'><strong>Audition Registration:</strong>&nbsp;&nbsp;forms are due to your school band director by&nbsp;<u>October 7, 2016</u></p>
+					<p class='last_event'><strong>Auditions:&nbsp;&nbsp;</strong><u>Wednesday, November 2, 2016</u>&nbsp;@ Mayfield Woods Middle School. Students will be scheduled for a&nbsp;specific audition time slot between 4 pm and 8 pm. Students will receive their audition time&nbsp;slot from their school band director by October 26.</p>
+					<p class='last_event'><strong>Audition Requirements:</strong> Same as&nbsp;<a href="http://www.mmea-maryland.org/band/">Maryland All-State Jr. Band Music</a></p>
+					<p class='last_event'><strong>Ensemble:</strong> Rehearses/Performs throughout January 2017. Review last year's handbook as a guide. </p>
+					<p class='last_event'><a href="http://reichl.webs.com/HCPSS%20MS%20GT%20Band%20Handbook%20Cover.pdf">HCPSS MS GT Band Handbook (Cover)</a>&nbsp;</p>
+					<p class='last_event'><a href="http://reichl.webs.com/HCPSS%20MS%20GT%20Band%20Handbook%20Contents.pdf">HCPSS MS GT Band Handbook (Contents)</a>&nbsp;- This handbook is from the 2015 - 2016 School Year. It will be updated in January 2017. It serves as an example of how the ensemble functions.</p>
+	    		</div>
+		    </div>
+  		</div>
+</body>
+</html>

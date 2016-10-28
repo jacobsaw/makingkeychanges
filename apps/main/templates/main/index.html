@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Making Key Changes</title>
+	{% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Raleway Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,800" rel="stylesheet">
+</head>
+<body>
+  		<div class="container-fluid photo">
+  		<nav class="navbar navbar-inverse">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    
+	      <ul class="nav navbar-nav">
+	        <li><a href="{% url 'index' %}">HOME</a></li>
+	        <li><a href="{% url 'about' %}">ABOUT US</a></li>
+	        <li><a href="{% url 'services' %}">SERVICES</a></li>
+	        <li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TESTIMONIALS <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="{% url 'testimonials' %}">Lori</a></li>
+		            <li><a href="{% url 'community_ensembles' %}">Marci</a></li>
+          		</ul>
+        	</li>
+	        <li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENGAGEMENTS <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="{% url 'engagements' %}">Lori</a></li>
+		            <li><a href="{% url 'community_ensembles' %}">Marci</a></li>
+          		</ul>
+        	</li>
+        	<li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PUBLICATIONS <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="{% url 'publications' %}">Lori</a></li>
+		            <li><a href="{% url 'community_ensembles' %}">Marci</a></li>
+          		</ul>
+        	</li>
+	        <li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="{% url 'community_ensembles' %}">COMMUNITY ENSEMBLES</a></li>
+		            <li><a href="{% url 'composer_connections' %}">COMPOSER CONNECTIONS</a></li>
+		            <li><a href="{% url 'hcpss' %}">HCPSS MS GT BAND</a></li>
+		            <li><a href="{% url 'instrument_repairs' %}">INSTRUMENT REPAIRS</a></li>
+		            <li><a href="{% url 'online_resources' %}">ONLINE RESOURCES</a></li>
+		            <li><a href="{% url 'private_lessons' %}">PRIVATE LESSONS</a></li>
+		            <li><a href="{% url 'recommended_equipment' %}">RECOMMENDED EQUIPMENT</a></li>
+		            <li><a href="{% url 'study_recordings' %}">STUDY RECORDINGS</a></li>
+		            <li><a href="{% url 'summer_band_camps' %}">SUMMER BAND CAMPS</a></li>
+          		</ul>
+        	</li>
+	        <li><a href="{% url 'contact' %}">CONTACT US</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	</nav>
+	<div class='row top-buffer'>
+		<div class="col-md-12">
+	    		<h1 class="logo text-center">MAKING KEY CHANGES</h1>
+	    		<h1 class="sublogo text-center">Refresh Your Music Program</h1>
+	    </div>
+	</div>
+  			
+  			
+ 			<!-- <div class="row top-buffer">
+ 				<div class="col-md-4">
+ 					<img src="img/music_notes.png">
+ 				</div>
+ 			</div> -->
+  			<!-- <div class="row top-buffer">
+  				<div class="col-md-4">
+	    		<h3><strong><span class="slogan">We aim to support</span></strong>  school district stakeholders in the reflection of current educational programs, implementation and development of future pathways, and maintenance of communities created through excellence in education.</h3>
+	    		</div>
+  			</div> -->
+  		</div>
+</body>
+</html>

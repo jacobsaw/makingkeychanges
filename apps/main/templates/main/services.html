@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Raleway Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,800" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+      <nav class="navbar navbar-inverse">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+        <ul class="nav navbar-nav">
+          <li><a href="{% url 'index' %}">HOME</a></li>
+          <li><a href="{% url 'about' %}">ABOUT US</a></li>
+          <li><a href="{% url 'services' %}">SERVICES</a></li>
+          <li><a href="{% url 'testimonials' %}">TESTIMONIALS</a></li>
+          <li><a href="{% url 'engagements' %}">ENGAGEMENTS</a></li>
+          <li><a href="{% url 'publications' %}">PUBLICATIONS</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">COMMUNITY ENSEMBLES</a></li>
+                <li><a href="#">COMPOSER CONNECTIONS</a></li>
+                <li><a href="#">HCPSS MS GT BAND</a></li>
+                <li><a href="#">INSTRUMENT REPAIRS</a></li>
+                <li><a href="#">ONLINE RESOURCES</a></li>
+                <li><a href="#">PRIVATE LESSONS</a></li>
+                <li><a href="#">RECOMMENDED EQUIPMENT</a></li>
+                <li><a href="#">STUDY RECORDINGS</a></li>
+                <li><a href="#">SUMMER BAND CAMPS</a></li>
+              </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">CONTACT US</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+  </nav>
+    <div class="row headliner">
+            <div class="col-md-12">
+              <h1 class='logo text-center'>MAKING KEY CHANGES</h1>
+              <h1 class='sublogo text-center'>SERVICES</h1>
+            </div>
+    </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">ADJUDICATOR</h2>
+          <p class="lead">Trust an extra set of musically trained ears to enhance the quality of your ensemble's sound. Invite us to adjudicate at a music festival or mock adjudication.</p>
+          <h2 class="featurette-heading"><span class="text-muted"><a href='mailto:Consultants@makingkeychanges.com'>Schedule an adjudication!</a></span></h2>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/recording_station.jpeg' %}" alt="recording station">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">CLINICIAN</h2>
+          <p class="lead">Supplement collaborative instruction to your daily teaching. Invite us to offer support to musicians and the conductor at an ensemble rehearsal.</p>
+          <h2 class="featurette-heading"><span class="text-muted"><a href='mailto:Consultants@makingkeychanges.com'>Schedule a clinic!</a></span></h2>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/clinician.jpg' %}" alt="Lori Schwartz-Reichl conducting a band">
+        </div>
+      </div>
+       <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">CURRICULUM SPECIALIST</h2>
+          <p class="lead">Validate your curriculum to school district stakeholders and improve student achievement. Invite us to assess your curriculum through examination of national trends and research, alignment with the CORE Standards, and implementation of technology.  Invite us to assess and develop curriculum for a program.</p>
+          <h2 class="featurette-heading"><span class="text-muted"><a href='mailto:Consultants@makingkeychanges.com'>Schedule an assessment!</a></span></h2>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/curriculum_specialist.jpg' %}" alt="consulting">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">GUEST CONDUCTOR</h2>
+          <p class="lead">Unite students from various locations, ethnicities, financial statuses, or levels of talent in order to build a successful musical family in a short rehearsal time span.  Invite us to conduct district-wide, county-wide, regional, or all-state ensembles.</p>
+          <h2 class="featurette-heading"><span class="text-muted"><a href='mailto:Consultants@makingkeychanges.com'>Schedule a guest conductor!</a></span></h2>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/score.jpg' %}" alt="Conductor's score">
+        </div>
+      </div>
+
+       <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">MENTOR</h2>
+          <p class="lead">Acquire support needed on numerous teaching and learning topics, such as mastering effective classroom management techniques, connecting with students and families, planning for collaborative events and trips, and obtaining administrative support.  Invite us to provide mentorship.</p>
+          <h2 class="featurette-heading"><span class="text-muted"><a href='mailto:Consultants@makingkeychanges.com'>Schedule a mentorship!</a></span></h2>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/mentorship.jpg' %}" alt="consultation in a cafe">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">PRESENTER</h2>
+          <p class="lead">Demonstrate advocacy support to decision-makers and influential stakeholders as a way of advocating value for educational programs.  Invite us to serve as a keynote speaker or presenter.</p>
+          <h2 class="featurette-heading"><span class="text-muted"><a href='mailto:Consultants@makingkeychanges.com'>Schedule a presentation!</a></span></h2>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/microphone.jpeg' %}" alt="lone microphone">
+        </div>
+      </div>
+
+       <hr class="featurette-divider">
+
+      <div class="row featurette last">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">PROFESSIONAL DEVELOPER</h2>
+          <p class="lead">Prepare meaningful professional development time for educators on endless academic topics, such as building learning communities, developing effective classroom management techniques and routines, enhancing relationships with diverse populations of students, formulating assessments, fostering unity in music ensembles, and using technology to strengthen student achievement.  Invite us to develop a session!</p>
+          <h2 class="featurette-heading"><span class="text-muted"><a href='mailto:Consultants@makingkeychanges.com'>Schedule a session!</a></span></h2>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/professional_development.jpeg' %}" alt="person hard at work at a desk">
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+

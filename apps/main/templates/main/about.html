@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+{% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Raleway Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,800" rel="stylesheet">
+</head>
+<body>
+  		<div class="container-fluid photo">
+	  		<nav class="navbar navbar-inverse">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    
+	      <ul class="nav navbar-nav">
+	        <li><a href="{% url 'index' %}">HOME</a></li>
+	        <li><a href="{% url 'about' %}">ABOUT US</a></li>
+	        <li><a href="{% url 'services' %}">SERVICES</a></li>
+	        <li><a href="{% url 'testimonials' %}">TESTIMONIALS</a></li>
+	        <li><a href="{% url 'engagements' %}">ENGAGEMENTS</a></li>
+	        <li><a href="{% url 'publications' %}">PUBLICATIONS</a></li>
+	        <li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="#">COMMUNITY ENSEMBLES</a></li>
+		            <li><a href="#">COMPOSER CONNECTIONS</a></li>
+		            <li><a href="#">HCPSS MS GT BAND</a></li>
+		            <li><a href="#">INSTRUMENT REPAIRS</a></li>
+		            <li><a href="#">ONLINE RESOURCES</a></li>
+		            <li><a href="#">PRIVATE LESSONS</a></li>
+		            <li><a href="#">RECOMMENDED EQUIPMENT</a></li>
+		            <li><a href="#">STUDY RECORDINGS</a></li>
+		            <li><a href="#">SUMMER BAND CAMPS</a></li>
+          		</ul>
+        	</li>
+	        <li><a href="{% url 'contact' %}">CONTACT US</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	</nav>
+  			<div class="row headliner">
+			    <div class="col-md-12">
+			    	<h1 class='logo text-center'>MAKING KEY CHANGES</h1>
+			    	<h1 class='sublogo text-center'>ABOUT US</h1>
+			    </div>
+	  		</div>
+	  		<div class="row">
+		    	<div class="col-md-5 about">
+	  			<img src="{% static 'main/img/lori_profile.jpg' %}" class="img-responsive img-circle pull-left" alt="Responsive image">
+		    	<p><a href="mailto:saxsista@aol.com">Lori Schwartz Reichl</a> is the author of the series &ldquo;Key Changes: &nbsp;Refreshing Your Music Program&rdquo; published monthly in the teacher edition of InTune Magazine. Mrs. Reichl is an active guest conductor for regional honors and all-county bands and an adjudicator for regional and state band, orchestra, and solo/ensemble festivals. Mrs. Reichl is an avid presenter at professional development sessions and academic conferences nationwide, where she draws upon her diverse teaching experiences by serving as a resource for building inspiring music programs, developing effective classroom management techniques and routines within all subject areas, enhancing relationships with diverse populations of students, and fostering unity in music ensembles and classrooms. &nbsp;Mrs. Reichl currently serves as co-director of the Howard County Middle School Gifted &amp; Talented Band in Maryland, having previously served as creator and co-director of the Howard County Middle School Honors Band. Mrs. Reichl also serves as assistant director for the Regional Repertory Wind Ensemble, where she has collaborated with composers such as Brian Balmages, Samuel Hazo, Richard Saucedo, Robert Sheldon, and Frank Ticheli.</p>
+				
+				<p>In 2002 Mrs. Reichl served as the first full-time band director for Daniel Boone Area Middle School in Berks County, Pennsylvania where she received the Superintendent's Award for Excellence in Teaching. From 2006 until 2014, she served as band director for Oakland Mills Middle School in Columbia, Maryland where her bands consistently received superior ratings at county, state, and regional adjudications. While serving the Oakland Mills Community, Mrs. Reichl's bands received an Honorary Resolution from the Howard County Council and performed as the featured middle school band at the 2014 Maryland Music Educators Conference. In 2010 Mrs. Reichl was a finalist for the Howard County Teacher of the Year Award and in 2013 a finalist for the Howard County Parents for School Music Educator of the Year Award. In the fall of 2014, Mrs. Reichl was asked to serve as band director for Thomas Viaduct Middle School, Howard County's newest middle school. She was given the opportunity to build a band program from scratch by inspiring a new community consisting of students from 27 previous schools. In the opening year of the school, the band received superior ratings at county and regional adjudications and performed at the state band festival.</p>
+				
+				<p>During the summers of 2006 through 2010, Mrs. Reichl served as symphonic band and orchestra director for the American Music Abroad Bronze Tour of Europe by conducting American high school musicians while touring Austria, France, Germany, Italy, and Switzerland. &nbsp;Currently, Mrs. Reichl spends her summers serving as band director at numerous summer camps throughout Maryland. &nbsp;Most recently, she has been invited to develop a an instrumental intensive program for Young Artists of America for the summer of 2017.</p>
+
+				<p>Mrs. Reichl earned her B.S. in music education from West Chester University, her M.M in music education from Lebanon Valley College, and additional training in classroom management, supervision of student teachers, and teacher leadership from various collegiate institutions.</p> 
+				<a href="mailto:saxsista@aol.com"><img src="{% static 'main/img/email.png' %}" class="email-pic img-responsive center-block" alt="Responsive image"></a>
+		    	<h3 class="text-center email"><a href="mailto:saxsista@aol.com">Contact Lori</a></h3>
+	    	</div>
+	    	<div class="col-md-5 about2">
+		  			<img src="{% static 'main/img/MarciMajor.jpg' %}" class="img-responsive img-circle pull-left" alt="Responsive image">
+			    	<p><a href="mailto:mmajor@wcupa.edu">Marci L. Major</a> serves as Assistant Professor of Music Education at West Chester University, PA, where she teaches choral methods, intro to music education and graduate classes, works with student teacher observations, and teaches a service learning class in collaboration with the Kennett Symphony Children&#39;s Chorus.  Additionally she directs the Youth Chorale ensemble with the Kennett Symphony Children&#39;s Chorus.</p>
+
+			    	<p>As an active researcher, Dr. Major&#39;s primary research interests encompass the economics of music education in today&#39;s public schools, and choral music in the middle levels. She has had her research accepted for publication in the Journal of Research in Music Education, Research Studies in Music Education, the Missouri Journal of Research in Music Education, the Missouri School Music Magazine and the Maryland Music Educator&#39;s Journal. Additionally, Dr. Major has presented her research at state, national and international conventions, including NAfME National Conferences and ISME International Conferences. Dr. Major balances her research interests with the roles of clinician, adjudicator and conductor by giving teacher preparation workshops through and conducting honors choirs locally and across the nation. Upcoming engagements include a presentation at the National OAKE conference and conducting honors choirs in Pennsylvania, Maryland and Delaware.</p>
+
+			    	<p>Dr. Major earned her B.S. in music education from West Chester University, her M.M. in choral conducting from Michigan State University, and her Ph.D. in music education from The Ohio State University. Formerly Assistant Professor of Music Education and Assistant Director of Choral Activities at the University of Missouri, Dr. Major taught choral materials and methods, conducting and rehearsal techniques, psychology of music, and conducted MU&#39;s Concert Chorale. Dr. Major also served as the Artistic Director for the community choir Columbia Chorale, and co-directed the Choristers ensemble of the St. Louis Children&#39;s Chorus. Prior to her appointment at MU, Dr. Major taught middle and high school choir in Michigan, and later served as a graduate teaching associate at The Ohio State University.</p>
+			    	<a href="mailto:mmajor@wcupa.edu"><img src="{% static 'main/img/email.png' %}" class="img-responsive center-block" alt="Responsive image"></a>
+			    	<h3 class="text-center email"><a href="mailto:mmajor@wcupa.edu">Contact Marci</a></h3>
+		    	</div>
+		    </div>
+  		</div>
+</body>
+</html>

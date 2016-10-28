@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Raleway Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,800" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+      <nav class="navbar navbar-inverse">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+        <ul class="nav navbar-nav">
+          <li><a href="{% url 'index' %}">HOME</a></li>
+          <li><a href="{% url 'about' %}">ABOUT US</a></li>
+          <li><a href="{% url 'services' %}">SERVICES</a></li>
+          <li><a href="{% url 'testimonials' %}">TESTIMONIALS</a></li>
+          <li><a href="{% url 'engagements' %}">ENGAGEMENTS</a></li>
+          <li><a href="{% url 'publications' %}">PUBLICATIONS</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">COMMUNITY ENSEMBLES</a></li>
+                <li><a href="#">COMPOSER CONNECTIONS</a></li>
+                <li><a href="#">HCPSS MS GT BAND</a></li>
+                <li><a href="#">INSTRUMENT REPAIRS</a></li>
+                <li><a href="#">ONLINE RESOURCES</a></li>
+                <li><a href="#">PRIVATE LESSONS</a></li>
+                <li><a href="#">RECOMMENDED EQUIPMENT</a></li>
+                <li><a href="#">STUDY RECORDINGS</a></li>
+                <li><a href="#">SUMMER BAND CAMPS</a></li>
+              </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">CONTACT US</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+  </nav>
+    <div class="row headliner">
+            <div class="col-md-12">
+              <h1 class='logo text-center'>MAKING KEY CHANGES</h1>
+              <h1 class='sublogo text-center'>TESTIMONIALS</h1>
+            </div>
+    </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">ADJUDICATOR &nbsp;&nbsp;<span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Ensemble directors often rely on an extra set of ears to enhance the quality of their ensemble's sound.  Our consultants are available for services such as adjudication festivals and mock adjudications. <a href="mailto:Marci@makingkeychanges.com">Hire an adjudicator.</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/violinist.jpg' %}" alt="Generic placeholder image%}">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">CLINICIAN <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Clinics best serve the needs of music programs when there is a collaborative nature between the ensemble conductor and the guest director. Our consultants supplement daily instruction to what the ensemble conductor has currently been teaching.  Clinics include one-on-one instruction time between a musical ensemble and a qualified director in the form of ensemble coaching and/or guest conducting. <a href="mailto:Marci@makingkeychanges.com">Schedule a clinic.</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/clinician.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+       <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">CURRICULUM ASSESSOR &amp; DEVELOPER <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">With constant changes to curriculum and alignment with the CORE Standards, school district stakeholders might question the current validity and relevance of their curriculum. Our consultants provide an outside perspective to review current curriculum and provide a comprehensive improvement plan.  In this assessment, our consultants examine national trends in music education that the research, literature and practice reflect, acknowledge the best uses of technology for improving student achievement, recognize the strengths and deficits of the current school district curriculum and map suggestions for changes and improvements. <a href="mailto:Marci@makingkeychanges.com">Hire a curriculum specialist.</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/guitar-strings.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">GUEST CONDUCTOR <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Our consultants are available to conduct district-wide, county-wide, regional, or all-state ensembles.  Their focus is to unite students from various locations, ethnicities, financial statuses, or levels of talent to build a successful musical family in a short rehearsal time span. <a href="mailto:Marci@makingkeychanges.com">Hire a guest conductor.</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/guest_conductor.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+       <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">MENTOR <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Novice teachers often lack the support needed to master classroom management techniques, connect with populations of students, plan for collaborative events and trips, and <a href="mailto:Marci@makingkeychanges.com">Access a mentor.</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/pedal.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">PRESENTER <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Advocacy support to speak to decision-makers as a way of advocating for your value of music education program. <a href="mailto:Marci@makingkeychanges.com">Hire a presenter.</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/guitar-strings.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+       <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">PROFESSIONAL DEVELOPER <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Wishing to make professional development time meaningful for music teachers, school district administrators can work with our consultants to develop ideas that parallel and supplement in-service topics specific for music teachers.  The topics are endless, and some ideas include using technology, developing assessments, and building learning communities. <a href="mailto:Marci@makingkeychanges.com">Schedule a professional development session.</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/pedal.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">PROGRAMMATIC ORGANIZER <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Pretend. <a href="mailto:Marci@makingkeychanges.com">Schedule a professional development session.</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/guitar-strings.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette last">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">STRATEGIC PLANNER <span class="text-muted">See for yourself.</span></h2><p class='lead'>
+          I AM DUMMY TEXT THAT NEEDS TO BE REPLACED<a href="mailto:Marci@makingkeychanges.com">Schedule a professional development session.</a></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/pedal.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+

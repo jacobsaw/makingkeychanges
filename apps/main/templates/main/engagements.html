@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Engagements</title>
+{% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Raleway Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,800" rel="stylesheet">
+</head>
+<body>
+  		<div class="container-fluid photo">
+	  		<nav class="navbar navbar-inverse">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a href="{% url 'index' %}">HOME</a></li>
+          			<li><a href="{% url 'about' %}">ABOUT US</a></li>
+          			<li><a href="{% url 'services' %}">SERVICES</a></li>
+          			<li><a href="{% url 'testimonials' %}">TESTIMONIALS</a></li>
+          			<li><a href="{% url 'engagements' %}">ENGAGEMENTS</a></li>
+          			<li><a href="{% url 'publications' %}">PUBLICATIONS</a></li>
+          			<li class="dropdown">
+              			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
+              			<ul class="dropdown-menu">
+			                <li><a href="#">COMMUNITY ENSEMBLES</a></li>
+			                <li><a href="#">COMPOSER CONNECTIONS</a></li>
+			                <li><a href="#">HCPSS MS GT BAND</a></li>
+			                <li><a href="#">INSTRUMENT REPAIRS</a></li>
+			                <li><a href="#">ONLINE RESOURCES</a></li>
+			                <li><a href="#">PRIVATE LESSONS</a></li>
+			                <li><a href="#">RECOMMENDED EQUIPMENT</a></li>
+			                <li><a href="#">STUDY RECORDINGS</a></li>
+			                <li><a href="#">SUMMER BAND CAMPS</a></li>
+              			</ul>
+          			</li>
+          			<li><a href="{% url 'contact' %}">CONTACT US</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			</nav>
+  			<div class="row headliner">
+			    <div class="col-md-12">
+			    	<h1 class='logo text-center'>MAKING KEY CHANGES</h1>
+			    	<h1 class='sublogo text-center'>ENGAGEMENTS</h1>
+			    </div>
+	  		</div>
+	  		<div class="row">
+	  			<div class="col-md-8 col-md-offset-2 engagements">
+	  				<h3 class='sublogo'>UPCOMING</h3>
+		  			<p class='lead_event'>October 1, 2016 &nbsp; &nbsp; PRESENTER</p> 
+					<p class='last_event'>Baltimore Symphony Orchestra's OrchKids:  Baltimore, MD</p> 
+					
+					<p class='lead_event'>October 2016 &nbsp; &nbsp; CONTRIBUTOR</p>
+					<p class='mid_event'>Teaching Music Magazine:  New York, NY</p> 
+					<p class='last_event'>article:  <i>We Are Family:  Creating and Sustaining Bonds in Performing Ensembles</i></p> 
+
+					<p class='lead_event'>October 2016 &nbsp; &nbsp; AUTHOR</p>
+					<p class='mid_event'>InTune Monthly Magazine:  New York, NY</p> 
+					<p class='mid_event'>article:  <i><a target="_blank" href='http://reichl.webs.com/InTune%20October%202016.A%20Motto%20for%20Succes.Lori%20Schwartz%20Reichl.pdf'>A Motto for Success: The Surprising Benefits of Music Classroom Sloganeering</a></i></p>
+					<p class='last_event'><a target="_blank" href='http://www.intunemonthly.com/the-in-tune-store/'>Subscribe to the magazine to read more!</a></p>
+					
+					<p class='lead_event'>October 16, 2016 &nbsp; &nbsp; Presenter</p>
+					<p class='last_event'>Catholic University of America:  Washington, DC</p>
+
+					<p class='lead_event'>November 2016 &nbsp; &nbsp; Author</p>
+					<p class='mid_event'>InTune Monthly Magazine:  New York, NY</p>  
+					<p class='mid_event'>article:  <i>Management Potential:  A Purposeful and Passionate Plan for Managing the Music Classroom</i></p>
+					<p class='last_event'><a target="_blank" href='http://www.intunemonthly.com/product/in-tune-for-individuals-and-libraries/'>Subscribe to the magazine to read this article and the remaining issues that contain Lori's series "Key Changes: Refreshing Your Music Program"!</a></p> 
+
+					<p class='lead_event'>November 10, 2016 &nbsp; &nbsp; Presenter</p> 
+					<p class='last_event'>National Association for Music Education Conference:  Dallas, TX</p>
+
+					<p class='lead_event'>November 14, 2016: &nbsp; &nbsp; Clinician</p>
+					<p class='last_event'>Mayfield Woods Middle School:  Columbia, MD</p> 
+
+					<p class='lead_event'>November 16, 2016 &nbsp; &nbsp; Clinician</p>
+					<p class='last_event'>Thomas W. Pyle Middle School:  Bethesda, MD</p>
+
+					<p class='lead_event'>November 30 - December 1, 2016 &nbsp; &nbsp; Conductor</p>
+					<p class='last_event'>Allegheny All-County Middle School Band</p>
+
+					<p class='lead_event'>December 2016 &nbsp; &nbsp; Author</p>
+					<p class='mid_event'>InTune Monthly Magazine:  New York, NY</p>  
+					<p class='last_event'>series:  "Key Changes:  Refreshing Your Music Program"</p>  
+
+					<p class='lead_event'>December 8 - 10, 2016 &nbsp; &nbsp; Conductor</p>
+					<p class='last_event'>Baltimore All-County Middle School Band</p> 
+
+					<p class='lead_event'>January 2017 &nbsp; &nbsp; Author</p>
+					<p class='mid_event'>InTune Monthly Magazine:  New York, NY</p>  
+					<p class='last_event'>series:  "Key Changes:  Refreshing Your Music Program"</p> 
+
+					<p class='lead_event'>January 2017 &nbsp; &nbsp; Conductor</p>
+					<p class='last_event'>Howard All-County Gifted & Talented Middle School Band: Marriottsville, MD</p>
+
+					<p class='lead_event'>February 2017 &nbsp; &nbsp; Author</p>
+					<p class='mid_event'>InTune Monthly Magazine:  New York, NY</p>  
+					<p class='last_event'>series:  "Key Changes:  Refreshing Your Music Program"</p> 
+
+					<p class='lead_event'>February 4, 2017 &nbsp; &nbsp; Adjudicator</p>
+					<p class='last_event'>Cecil All-County Solo Ensemble Festival: Elkton, MD</p>
+					
+					<p class='lead_event'>March 2017 &nbsp; &nbsp; Author</p>
+					<p class='mid_event'>InTune Monthly Magazine:  New York, NY</p>  
+					<p class='last_event'>series:  "Key Changes:  Refreshing Your Music Program"</p> 
+
+					<p class='lead_event'>March 15, 2017 &nbsp; &nbsp; Adjudicator</p>
+					<p class='last_event'>Cecil All-County High School Band & Orchestra Assessment: Elkton, MD</p>
+
+					<p class='lead_event'>March 16, 2017  &nbsp; &nbsp; Adjudicator</p>
+					<p class='last_event'>Cecil All-County Middle School Band & Orchestra Assessment: Elkton, MD</p>
+
+					<p class='lead_event'>March 31 - April 1, 2017 &nbsp; &nbsp; Conductor</p>
+					<p class='last_event'>Berks All-County Middle School Band: Kutztown, PA</p>
+
+					<p class='lead_event'>April 2017 &nbsp; &nbsp; Author</p>
+					<p class='mid_event'>InTune Monthly Magazine:  New York, NY</p>  
+					<p class='last_event'>series:  "Key Changes:  Refreshing Your Music Program"</p>
+
+					<p class='lead_event'>April 11, April 28, May 3, 2017 &nbsp; &nbsp; Conductor</p> 
+					<p class='last_event'>Cecil All-County Middle School Band: Perryville, MD</p>
+
+					<p class='lead_event'>May 2017 &nbsp; &nbsp; Author</p>
+					<p class='mid_event'>InTune Monthly Magazine:  New York, NY  </p>
+					<p class='last_event'>series:  "Key Changes:  Refreshing Your Music Program" </p>
+
+					<p class='lead_event'>June 17 - 18 2017 &nbsp; &nbsp; Assistant Director</p>
+					<p class='last_event'>Regional Repertory Wind Ensemble:  Marriottsville, MD</p>  
+
+					<p class='lead_event'>June 19 - 23, 2017 &nbsp; &nbsp; Conductor</p>
+					<p class='last_event'>Catholic University of America, Middle & High School Summer Band Camp:  Washington, DC</p>
+
+					<p class='lead_event'>July 2017 &nbsp; &nbsp; Conductor</p>
+					<p class='last_event'>York All-County Middle & High School Summer Band Camp: Manchester, PA</p>
+
+					<p class='lead_event'>July 2017 &nbsp; &nbsp; Conductor</p>
+					<p class='last_event'>Young Artists of America, Middle & High School Summer Band Camp:  Sandy Spring, MD</p>
+
+					<p class='lead_event'>July 2017 &nbsp; &nbsp; Conductor</p>
+					<p class='last_event'>Marriotts Ridge High Boosters, Middle & High School Summer Band Camp:  Marriottsville, MD</p>
+
+					<p class='lead_event'>November 7, 2017 &nbsp; &nbsp; PRESENTER</p>
+					<p class='last_event'>Towson University: Towson, MD</p>
+
+					<p class='lead_event'>May 2018 &nbsp; &nbsp; Conductor</p>
+					<p class='last_event'>Cecil All-County High School Band: Perryville, MD</p> 
+		  			
+		  			<h3 class='sublogo'>PREVIOUS ENGAGEMENTS</h3>
+					<p>September 2016: <span class='pinkify'> Presenter</span>, Baltimore Symphony Orchestra's OrchKids:  Baltimore, MD</p>
+					
+					<p>August 2016: <span class='pinkify'>Presenter</span>, Cecil County Public School System (CCPS), Instrumental Music Educator Professional Development</p>
+
+					<p>August 2016:  <span class='pinkify'>Presenter</span>, Howard County Public School System (HCPSS), New Music Teacher Orientation</p>
+
+					<p>July 2016: <span class='pinkify'>Conductor</span>, Marriotts Ridge High School Booster Camp, Middle & High School Summer Band Camp</p>
+					
+					<p>July 2016:  <span class='pinkify'>Conductor</span>, Northeastern Music Boosters (PA), York County Middle & High School Summer Band Camp</p> 
+
+					<p>April 2016: <span class='pinkify'>Adjudicator</span>, Howard County Public School System (HCPSS), Elementary Solo Ensemble Festival</p>
+					
+					<p>April 2016:  <span class='pinkify'>Clinician & Consultant</span>, Band Programs for the following schools:   Annapolis Middle, Crofton Middle, DeMatha Catholic High</p>
+					
+					<p>March 2016: <span class='pinkify'>Adjudicator</span>, Baltimore County Public School (BCPS), Middle School Band Assessment</p>
+
+					<p>March 2016: <span class='pinkify'>Adjudicator</span>, Carroll County Public School (CCPS), Middle & High School Band Assessment</p>
+
+					<p>March 2016: <span class='pinkify'>Adjudicator</span>, Cecil County Public School (CCPS), Middle & High School Orchestra Assessment</p>
+
+					<p>March 2016: <span class='pinkify'>Guest Conductor</span>, York County Schools (PA), All-County Middle School Band</p>
+
+					<p>March 2016: <span class='pinkify'>Adjudicator</span>, Baltimore County Public School (BCPS), Middle &amp; High School Solo Ensemble Festival</p>
+
+					<p>March 2016: <span class='pinkify'>Adjudicator</span>, Prince George's County Public School (PGCPS), Middle School Solo Ensemble Festival</p>
+
+					<p>March 2016: <span class='pinkify'>Adjudicator</span>, Prince George's County Public School (PGCPS), High School Solo Ensemble Festival</p>
+
+					<p>March 2016: <span class='pinkify'>Clinician &amp; Consultant</span>, Band Programs for the following schools: Benjamin Banneker Middle, Crofton Middle, DeMatha Catholic High, Mount View Middle, Thomas W. Pyle Middle, Thomas Viaduct Middle, Westland Middle</p>
+
+					<p>February 2016: <span class='pinkify'>Adjudicator</span>, Cecil County Public School (CCPS), Middle &amp; High School Solo Ensemble Festival </p>
+
+					<p>January 2016: <span class='pinkify'>Guest Conductor</span>, Southern Maryland Tri-County Schools (MD), All-County Middle School Band [Calvert, Charles, &amp; St. Mary&rsquo;s Counties] </p>
+
+					<p>January 2016: <span class='pinkify'>Director</span>, Howard County Public School System (HCPSS), Middle School Gifted &amp; Talented Band</p>
+
+					<p>October 2015: <span class='pinkify'>selected as a Presenter</span>, National Association for Music Education (NAfME), National In-Service Conference in Nashville </p>
+
+					<p>August 2015: <span class='pinkify'>Presenter</span>, Howard County Public School System (HCPSS), New Music Teacher Orientation </p>
+
+					<p>July 2015: <span class='pinkify'>Conductor</span>, Marriotts Ridge High School Booster Camp, Middle &amp; High School Summer Band Camp</p>
+
+					<p>June 2015: <span class='pinkify'>Assistant Director</span>, Regional Repertory Wind Ensemble with Frank Ticheli</p>
+
+					<p>April 2015: <span class='pinkify'>Adjudicator</span>, Anne Arundel County Public School (AACPS), Middle School Band &amp; Orchestra Assessment </p>
+
+					<p>March 2015: <span class='pinkify'>Guest Conductor</span>, York County Schools (PA), All-County Middle School Band </p>
+
+					<p>February 2015: <span class='pinkify'>Guest Conductor</span>, Carroll County Schools (CCPS), All-County Middle School Band </p>
+
+					<p>January 2015: <span class='pinkify'>Conductor &amp; Coordinator</span>, Howard County Public School System (HCPSS), Middle School Honors Band</p>
+
+					<p>November 2014: <span class='pinkify'>Presenter</span>, Towson University (TU), Student Intern Program </p>
+
+					<p>August 2014: <span class='pinkify'>Presenter</span>, Baltimore County Public School (BCPS), Music Educator Professional Development </p>
+
+					<p>July 2014: <span class='pinkify'>Guest Conductor</span>, Anne Arundel County Public School (AACPS), Intermediate Summer Band Camp </p>
+
+					<p>July 2014: <span class='pinkify'>Conductor</span>, Marriotts Ridge High School Booster Camp, Middle &amp; High School Summer Band Camp</p>
+
+					<p>May 2014: <span class='pinkify'>Adjudicator</span>, Baltimore County Public School (BCPS), Middle &amp; High School Band Assessment </p>
+
+					<p>April 2014: <span class='pinkify'>Assistant Director</span>, Regional Repertory Wind Ensemble with Brian Balmages</p>
+
+					<p>March 2014: <span class='pinkify'>Presenter</span>, National Association for Music Education (NAfME), Meeting at University of Maryland Ch 225 </p>
+
+					<p>March 2014: <span class='pinkify'>Presenter</span>, Calvert County Public Schools (CCPS), Music Educator Professional Development </p>
+
+					<p>March 2014: <span class='pinkify'>Adjudicator</span>, Baltimore County Public School (BCPS), Middle &amp; High School Band Assessment</p>
+
+					<p>March 2014: <span class='pinkify'>Adjudicator</span>, St Mary&rsquo;s County Public School (SMCPS), Middle &amp; High School Band Assessment </p>
+
+					<p>March 2014: <span class='pinkify'>Adjudicator</span>, Prince George&rsquo;s County Public School (PGCPS), Middle &amp; High School Band Assessment</p>
+
+					<p>February 2014: <span class='pinkify'>Presenter</span>, Maryland Music Educators Association (MMEA), Conference </p>
+
+					<p>January 2014: <span class='pinkify'>Conductor &amp; Coordinator</span>, Howard County Public School System (HCPSS), Middle School Honors Band</p>
+
+					<p>December 2013: <span class='pinkify'>Guest Conductor</span>, Baltimore County Public School (BCPS), All-County Middle School Band </p>
+
+					<p>November 2013: <span class='pinkify'>Presenter</span>, Peabody Conservatory (JHU), Student Intern Program </p>
+
+					<p>October - December 2013: <span class='pinkify'>Mentor Teacher</span>, Peabody Conservatory (JHU), Student Teacher Internship </p>
+
+					<p>August 2013: <span class='pinkify'>Presenter</span>, Howard County Public School System (HCPSS), New Music Teacher Orientation </p>
+
+					<p>July 2013: <span class='pinkify'>Guest Conductor</span>, Anne Arundel County Public School (AACPS), Intermediate Summer Band Camp </p>
+
+					<p>April 2013: <span class='pinkify'>Assistant Director</span>, Regional Repertory Wind Ensemble with Robert Sheldon</p>
+
+					<p>April 2013: <span class='pinkify'>Adjudicator</span>, Anne Arundel County Public School (AACPS), Middle School Band &amp; Orchestra Assessment </p>
+
+					<p>March 2013: <span class='pinkify'>Narrator</span>, York County Schools, All-County Middle School Band </p>
+
+					<p>February 2013: <span class='pinkify'>Presenter</span>, Delaware Music Educators Association (DMEA), Conference </p>
+
+					<p>January 2013: <span class='pinkify'>Conductor &amp; Coordinator</span>, Howard County Public School System (HCPSS), Middle School Honors Band</p>
+
+					<p>November 2012: <span class='pinkify'>Presenter</span>, National Association for Music Education (NAfME), Meeting at University of Maryland Ch 225 </p>
+
+					<p>October - December 2012: <span class='pinkify'>Mentor Teacher</span>, Peabody Conservatory (JHU), Student Teacher Internship </p>
+
+					<p>October 2012: <span class='pinkify'>Presenter</span>, Maryland Music Educators Association (MMEA), Conference </p>
+
+					<p>July 2012: <span class='pinkify'>Guest Conductor</span>, Anne Arundel County Public School (AACPS), Intermediate Summer Band Camp </p>
+
+					<p>July 2012: <span class='pinkify'>Guest Conductor</span>, University of Maryland (UMD), Intermediate Summer Band Camp </p>
+
+					<p>April 2012: <span class='pinkify'>Presenter</span>, University of Maryland (UMD), Student Intern Music Program </p>
+
+					<p>April 2012: <span class='pinkify'>Assistant Director</span>, Regional Repertory Wind Ensemble with Richard Saucedo</p>
+
+					<p>May 2012: <span class='pinkify'>Adjudicator</span>, Baltimore County Public School (BCPS), Middle School Band Assessment </p>
+
+					<p>March - May 2012 : <span class='pinkify'>Mentor Teacher</span>, University of Maryland (UMD), Student Teacher Internship </p>
+
+					<p>March 2012: <span class='pinkify'>Adjudicator</span>, Baltimore County Public School (BCPS), Middle &amp; High School Band Assessment </p>
+
+					<p>February 2012: <span class='pinkify'>Guest Conductor</span>, Anne Arundel County Public School (AACPS), All-County Middle School Band </p>
+
+					<p>January 2012: <span class='pinkify'>Conductor &amp; Coordinator</span>, Howard County Public School System (HCPSS), Middle School Honors Band</p>
+
+					<p>November 2011: <span class='pinkify'>Presenter</span>, Pennsylvania Music Educators Association (PMEA), Conference with District 11 </p>
+
+					<p>July 2011: <span class='pinkify'>Saxophone Instructor</span>, University of Maryland (UMD), Youth Summer Band Camp </p>
+
+					<p>April 2011: <span class='pinkify'>Assistant Director</span>, Regional Repertory Wind Ensemble with Brian Balmages </p>
+
+					<p>March - May 2011 : <span class='pinkify'>Mentor Teacher</span>, Towson University (TU), Student Teacher Internship </p>
+
+					<p>January 2011: <span class='pinkify'>Conductor &amp; Coordinator</span>, Howard County Public School System (HCPSS), Middle School Honors Band</p>
+
+					<p>July 2010: <span class='pinkify'>Conductor &amp; Recruiter</span>, American Music Abroad (AMA), Bronze Tour of Europe </p>
+
+					<p>April 2010: <span class='pinkify'>Assistant Director</span>, Regional Repertory Wind Ensemble with Samuel Hazo </p>
+
+					<p>January 2010: <span class='pinkify'>Conductor &amp; Coordinator</span>, Howard County Public School System (HCPSS), Middle School Honors Band January 2009: Conductor &amp; Coordinator, Howard County Public School System (HCPSS), Middle School Honors Band</p>
+
+					<p>July 2009: <span class='pinkify'>Conductor &amp; Recruiter</span>, American Music Abroad (AMA), Bronze Tour of Europe High School Band &amp; Orchestra </p>
+
+					<p>July 2008: <span class='pinkify'>Conductor &amp; Recruiter</span>, American Music Abroad (AMA), Bronze Tour of Europe High School Band &amp; Orchestra </p>
+
+					<p>July 2006: <span class='pinkify'>Conductor &amp; Recruiter</span>, American Music Abroad (AMA), Bronze Tour of Europe High School Band &amp; Orchestra</p>      
+	    		</div>
+		    </div>
+  		</div>
+</body>
+</html>
