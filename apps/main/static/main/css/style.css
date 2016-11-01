@@ -163,10 +163,8 @@ p.cap_header{
 	padding-bottom:0px;
 }
 
-.quoter{
-	font-size:1.3em;
-	margin-bottom:0px;
-	padding-bottom:0px;
+p.quote{
+	padding-top:20px;	
 }
 
 .carousel-img{

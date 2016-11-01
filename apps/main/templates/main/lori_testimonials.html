@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Services</title>
+  <title>Testimonials</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% load staticfiles %}
@@ -32,25 +32,43 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
-        <ul class="nav navbar-nav">
+         <ul class="nav navbar-nav">
           <li><a href="{% url 'index' %}">HOME</a></li>
           <li><a href="{% url 'about' %}">ABOUT US</a></li>
           <li><a href="{% url 'services' %}">SERVICES</a></li>
-          <li><a href="{% url 'testimonials' %}">TESTIMONIALS</a></li>
-          <li><a href="{% url 'engagements' %}">ENGAGEMENTS</a></li>
-          <li><a href="{% url 'publications' %}">PUBLICATIONS</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TESTIMONIALS <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'lori_testimonials' %}">Lori</a></li>
+                <li><a href="{% url 'marci_testimonials' %}">Marci</a></li>
+              </ul>
+          </li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENGAGEMENTS <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'lori_engagements' %}">Lori</a></li>
+                <li><a href="{% url 'marci_engagements' %}">Marci</a></li>
+              </ul>
+          </li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PUBLICATIONS <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'lori_publications' %}">Lori</a></li>
+                <li><a href="{% url 'marci_publications' %}">Marci</a></li>
+              </ul>
+          </li>
           <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">COMMUNITY ENSEMBLES</a></li>
-                <li><a href="#">COMPOSER CONNECTIONS</a></li>
-                <li><a href="#">HCPSS MS GT BAND</a></li>
-                <li><a href="#">INSTRUMENT REPAIRS</a></li>
-                <li><a href="#">ONLINE RESOURCES</a></li>
-                <li><a href="#">PRIVATE LESSONS</a></li>
-                <li><a href="#">RECOMMENDED EQUIPMENT</a></li>
-                <li><a href="#">STUDY RECORDINGS</a></li>
-                <li><a href="#">SUMMER BAND CAMPS</a></li>
+                <li><a href="{% url 'community_ensembles' %}">COMMUNITY ENSEMBLES</a></li>
+                <li><a href="{% url 'composer_connections' %}">COMPOSER CONNECTIONS</a></li>
+                <li><a href="{% url 'hcpss' %}">HCPSS MS GT BAND</a></li>
+                <li><a href="{% url 'instrument_repairs' %}">INSTRUMENT REPAIRS</a></li>
+                <li><a href="{% url 'online_resources' %}">ONLINE RESOURCES</a></li>
+                <li><a href="{% url 'private_lessons' %}">PRIVATE LESSONS</a></li>
+                <li><a href="{% url 'recommended_equipment' %}">RECOMMENDED EQUIPMENT</a></li>
+                <li><a href="{% url 'study_recordings' %}">STUDY RECORDINGS</a></li>
+                <li><a href="{% url 'summer_band_camps' %}">SUMMER BAND CAMPS</a></li>
               </ul>
           </li>
           <li><a href="{% url 'contact' %}">CONTACT US</a></li>
@@ -68,11 +86,14 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">ADJUDICATOR &nbsp;&nbsp;<span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Ensemble directors often rely on an extra set of ears to enhance the quality of their ensemble's sound.  Our consultants are available for services such as adjudication festivals and mock adjudications. <a href="mailto:Marci@makingkeychanges.com">Hire an adjudicator.</a></p>
+          <p class="lead quote">"Lori Schwartz Reichl has a keen understanding of the importance of making sure that every aspect of a music program is of the highest quality, so that students, staff, and parents are fully aware of their role in seeing that come to fruition. She has a unique ability to analyze a situation and prescribe a solution. She is musically talented, organizationally gifted, and has a vision for success in a music program that is unequalled."</p>
+          <p><strong>Dr. Richard Roberts</strong></p>
+          <p>Supervisor of Instrumental Music</p>
+          <p><a target="_blank" href='http://music.cua.edu'>Catholic University of America</a></p>
+          <p>Washington, D.C.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/violinist.jpg' %}" alt="Generic placeholder image%}">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/catholic_university.jpg' %}" alt="Catholic University">
         </div>
       </div>
 
@@ -80,94 +101,43 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">CLINICIAN <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Clinics best serve the needs of music programs when there is a collaborative nature between the ensemble conductor and the guest director. Our consultants supplement daily instruction to what the ensemble conductor has currently been teaching.  Clinics include one-on-one instruction time between a musical ensemble and a qualified director in the form of ensemble coaching and/or guest conducting. <a href="mailto:Marci@makingkeychanges.com">Schedule a clinic.</a></p>
+          <p class="lead quote">"Lori Schwartz Reichl doesn’t see problems; she sees opportunities and solutions. She has an uncanny ability to connect with staff and students alike with excellent discipline, top-notch musicianship, and an eye for the bigger picture."</p>
+          <p><strong>Andrew B. Spang</strong></p>
+          <p>Director of Bands</p>
+          <p><a target="_blank" href='http://music.cua.edu'>Folly Quarter Middle School</a></p>
+          <p>Maryland</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/clinician.jpg' %}" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/sax_shot.jpeg' %}" alt="Line of musicians with sax in the foreground">
         </div>
       </div>
        <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">CURRICULUM ASSESSOR &amp; DEVELOPER <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">With constant changes to curriculum and alignment with the CORE Standards, school district stakeholders might question the current validity and relevance of their curriculum. Our consultants provide an outside perspective to review current curriculum and provide a comprehensive improvement plan.  In this assessment, our consultants examine national trends in music education that the research, literature and practice reflect, acknowledge the best uses of technology for improving student achievement, recognize the strengths and deficits of the current school district curriculum and map suggestions for changes and improvements. <a href="mailto:Marci@makingkeychanges.com">Hire a curriculum specialist.</a></p>
+           <p class="lead quote">"Mrs. Reichl’s organizational approach to building excellence in a band program will be of great benefit to teachers who are struggling with creating a rehearsal/classroom environment that is filled with students that are motivated, meet and exceed expectations, and are focused on musical excellence."</p>
+          <p><strong>Dr. Laura Parker</strong></p>
+          <p>Coordinator of Performance & Pedagogy</p>
+          <p><a target="_blank" href='http://music.cua.edu'>Peabody Conservatory of Music</a></p>
+          <p>Maryland</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/guitar-strings.jpg' %}" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">GUEST CONDUCTOR <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Our consultants are available to conduct district-wide, county-wide, regional, or all-state ensembles.  Their focus is to unite students from various locations, ethnicities, financial statuses, or levels of talent to build a successful musical family in a short rehearsal time span. <a href="mailto:Marci@makingkeychanges.com">Hire a guest conductor.</a></p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/guest_conductor.jpg' %}" alt="Generic placeholder image">
-        </div>
-      </div>
-
-       <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">MENTOR <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Novice teachers often lack the support needed to master classroom management techniques, connect with populations of students, plan for collaborative events and trips, and <a href="mailto:Marci@makingkeychanges.com">Access a mentor.</a></p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/pedal.jpg' %}" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">PRESENTER <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Advocacy support to speak to decision-makers as a way of advocating for your value of music education program. <a href="mailto:Marci@makingkeychanges.com">Hire a presenter.</a></p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/guitar-strings.jpg' %}" alt="Generic placeholder image">
-        </div>
-      </div>
-
-       <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">PROFESSIONAL DEVELOPER <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Wishing to make professional development time meaningful for music teachers, school district administrators can work with our consultants to develop ideas that parallel and supplement in-service topics specific for music teachers.  The topics are endless, and some ideas include using technology, developing assessments, and building learning communities. <a href="mailto:Marci@makingkeychanges.com">Schedule a professional development session.</a></p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/pedal.jpg' %}" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">PROGRAMMATIC ORGANIZER <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Pretend. <a href="mailto:Marci@makingkeychanges.com">Schedule a professional development session.</a></p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/guitar-strings.jpg' %}" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/peabody.jpg' %}" alt="Peabody Conservatory of Music">
         </div>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette last">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">STRATEGIC PLANNER <span class="text-muted">See for yourself.</span></h2><p class='lead'>
-          I AM DUMMY TEXT THAT NEEDS TO BE REPLACED<a href="mailto:Marci@makingkeychanges.com">Schedule a professional development session.</a></p>
+        <div class="col-md-7 col-md-push-5">
+          <p class="lead quote">"Quote"</p>
+          <p><strong>BSO</strong></p>
+          <p>Coordinator of Performance & Pedagogy</p>
+          <p class="cap_header"><a target="_blank" href='https://www.bsomusic.org/'>Baltimore Symphony Orchestra</a></p> 
+          <p>Maryland</p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/pedal.jpg' %}" alt="Generic placeholder image">
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'main/img/meyerhoff.jpg' %}" alt="Joseph Meyerhoff Symphony Hall">
         </div>
       </div>
   </div>

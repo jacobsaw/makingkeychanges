@@ -23,14 +23,29 @@ def lori_testimonials(request):
 def marci_testimonials(request):
         return render(request, 'main/marci_testimonials.html')
 
-def engagements(request):
-    return render(request, 'main/engagements.html')
+def lori_publications(request):
+        return render(request, 'main/lori_publications.html')
 
-def publications(request):
+def marci_publications(request):
+        return render(request, 'main/marci_publications.html')
+
+def lori_engagements(request):
+    return render(request, 'main/lori_engagements.html')
+
+def marci_engagements(request):
+    return render(request, 'main/marci_engagements.html')
+
+def lori_publications(request):
     context = {
         'publications': Publication.objects.all().order_by('-date_order')
     }
-    return render(request, 'main/publications.html', context)
+    return render(request, 'main/lori_publications.html', context)
+
+def marci_publications(request):
+    context = {
+        'publications': Publication.objects.all().order_by('-date_order')
+    }
+    return render(request, 'main/marci_publications.html', context)
 
 def contact(request):
     form_class = ContactForm

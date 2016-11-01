@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Composer Connections</title>
+	<title>Publications</title>
 {% load staticfiles %}
   <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
   <!-- Latest compiled and minified CSS -->
@@ -29,7 +29,7 @@
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			       <ul class="nav navbar-nav">
+			      <ul class="nav navbar-nav">
 	        <li><a href="{% url 'index' %}">HOME</a></li>
 	        <li><a href="{% url 'about' %}">ABOUT US</a></li>
 	        <li><a href="{% url 'services' %}">SERVICES</a></li>
@@ -75,20 +75,16 @@
   			<div class="row headliner">
 			    <div class="col-md-12">
 			    	<h1 class='logo text-center'>MAKING KEY CHANGES</h1>
-			    	<h1 class='sublogo text-center'>COMPOSER CONNECTIONS</h1>
+			    	<h1 class='sublogo text-center'>PUBLICATIONS</h1>
 			    </div>
 	  		</div>
 	  		<div class="row">
 	  			<div class="col-md-6 col-md-offset-3 engagements">
-					<p class='last_event'>Created in 2009 as a vision of David C. Smith, Mrs. Reichl is the organizer/assistant director of the Regional Repertory Wind Ensemble.  This ensemble provides advanced musicians the opportunity to perform in a band setting, with the composer of the selected musical pieces also serving as the ensemble's conductor.  Students are given the opportunity to work directly with the composer and to learn from him/her.</p>
-					<p class='last_event'>The <strong>2017 Regional Repertory Wind Ensemble</strong> will be conducted by composer, <strong>Robert Sheldon</strong>. Sheldon has been commissioned to compose a new musical masterpiece for this event to be held June 17 and 18 in Howard County, Maryland.</p>
-					<p class='last_event'>Previous Regional Repertory Wind Ensemble Composers/Conductors:</p>
-					<p class='last_event'>2015:&nbsp;&nbsp;<strong>Frank Ticheli</strong></p>
-					<p class='last_event'>2014:&nbsp;&nbsp;<strong>Brian Balmages</strong></p>
-					<p class='last_event'>2013:&nbsp;&nbsp;<strong>Robert Sheldon</strong></p>
-					<p class='last_event'>2012:&nbsp;&nbsp;<strong>Richard Saucedo</strong></p>
-					<p class='last_event'>2011:&nbsp;&nbsp;<strong>Brian Balmages</strong></p>
-					<p class='last_event'>2010:&nbsp;&nbsp;<strong>Samuel Hazo</strong></p>
+					{% for publication in publications %}
+						<p class='lead_event'>{{publication.date}}</p>
+						<p class='mid_event'><em> &ldquo;{{publication.title}}&ldquo;</em></p>
+						<p class='last_event'><a target='_blank' href='{{publication.link}}'>{{publication.link_title}}</a></p>
+					{% endfor %}
 	    		</div>
 		    </div>
   		</div>

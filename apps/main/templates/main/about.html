@@ -31,25 +31,43 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    
-	      <ul class="nav navbar-nav">
+	       <ul class="nav navbar-nav">
 	        <li><a href="{% url 'index' %}">HOME</a></li>
 	        <li><a href="{% url 'about' %}">ABOUT US</a></li>
 	        <li><a href="{% url 'services' %}">SERVICES</a></li>
-	        <li><a href="{% url 'testimonials' %}">TESTIMONIALS</a></li>
-	        <li><a href="{% url 'engagements' %}">ENGAGEMENTS</a></li>
-	        <li><a href="{% url 'publications' %}">PUBLICATIONS</a></li>
+	        <li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TESTIMONIALS <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="{% url 'lori_testimonials' %}">Lori</a></li>
+		            <li><a href="{% url 'marci_testimonials' %}">Marci</a></li>
+          		</ul>
+        	</li>
+	        <li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENGAGEMENTS <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="{% url 'lori_engagements' %}">Lori</a></li>
+		            <li><a href="{% url 'marci_engagements' %}">Marci</a></li>
+          		</ul>
+        	</li>
+        	<li class="dropdown">
+          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PUBLICATIONS <span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+		            <li><a href="{% url 'lori_publications' %}">Lori</a></li>
+		            <li><a href="{% url 'marci_publications' %}">Marci</a></li>
+          		</ul>
+        	</li>
 	        <li class="dropdown">
           		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES <span class="caret"></span></a>
           		<ul class="dropdown-menu">
-		            <li><a href="#">COMMUNITY ENSEMBLES</a></li>
-		            <li><a href="#">COMPOSER CONNECTIONS</a></li>
-		            <li><a href="#">HCPSS MS GT BAND</a></li>
-		            <li><a href="#">INSTRUMENT REPAIRS</a></li>
-		            <li><a href="#">ONLINE RESOURCES</a></li>
-		            <li><a href="#">PRIVATE LESSONS</a></li>
-		            <li><a href="#">RECOMMENDED EQUIPMENT</a></li>
-		            <li><a href="#">STUDY RECORDINGS</a></li>
-		            <li><a href="#">SUMMER BAND CAMPS</a></li>
+		            <li><a href="{% url 'community_ensembles' %}">COMMUNITY ENSEMBLES</a></li>
+		            <li><a href="{% url 'composer_connections' %}">COMPOSER CONNECTIONS</a></li>
+		            <li><a href="{% url 'hcpss' %}">HCPSS MS GT BAND</a></li>
+		            <li><a href="{% url 'instrument_repairs' %}">INSTRUMENT REPAIRS</a></li>
+		            <li><a href="{% url 'online_resources' %}">ONLINE RESOURCES</a></li>
+		            <li><a href="{% url 'private_lessons' %}">PRIVATE LESSONS</a></li>
+		            <li><a href="{% url 'recommended_equipment' %}">RECOMMENDED EQUIPMENT</a></li>
+		            <li><a href="{% url 'study_recordings' %}">STUDY RECORDINGS</a></li>
+		            <li><a href="{% url 'summer_band_camps' %}">SUMMER BAND CAMPS</a></li>
           		</ul>
         	</li>
 	        <li><a href="{% url 'contact' %}">CONTACT US</a></li>
